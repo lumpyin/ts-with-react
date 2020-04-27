@@ -24,9 +24,7 @@ const App:React.FC = ()=> {
         <p>
           <button onClick={()=> {setShow(!show)}}>toggle tracker </button>
         </p>
-        {loading ? <p>loading</p> 
-         : <img src={dogResult && dogResult.message} />
-        }
+        
         <LikeButton></LikeButton>
         <a
           className="App-link"
